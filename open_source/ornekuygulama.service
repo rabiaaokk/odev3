@@ -1,0 +1,13 @@
+[Unit]
+Description=gunicorn daemon
+After=network.target
+
+[Service]
+User=rabia
+Group=www-data
+WorkingDirectory=/home/rabia/ders
+ExecStart=/usr/bin/python3 test.py
+
+[Install]
+WantedBy=multi-user.target
+~                               
